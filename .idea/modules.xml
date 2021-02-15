@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/HelloWorld1/HelloWorld1.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/HelloWorld1/HelloWorld1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/IdeaLearningProject/IdeaLearningProject.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/IdeaLearningProject/IdeaLearningProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LaunchCode .iml" filepath="$PROJECT_DIR$/LaunchCode .iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-exercises/java-web-dev-exercises.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-exercises/java-web-dev-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-exercises1.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-exercises1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/src/java-web-dev-exercises2.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/src/java-web-dev-exercises2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-studio7/java-web-dev-studio7.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/java-web-dev-studio7/java-web-dev-studio7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-techjobs-oo/java-web-dev-techjobs-oo.iml" filepath="$PROJECT_DIR$/java-web-dev-techjobs-oo/java-web-dev-techjobs-oo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/junit-studio-lc101/junit-studio-lc101.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/junit-studio-lc101/junit-studio-lc101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-web-dev-exercises/techjobs-console-java/techjobs-console-java.iml" filepath="$PROJECT_DIR$/java-web-dev-exercises/techjobs-console-java/techjobs-console-java.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="commons-csv-1.41">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/java-web-dev-exercises/src/org/launchcode/java/studios/techjobs-console-java/lib/commons-csv-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

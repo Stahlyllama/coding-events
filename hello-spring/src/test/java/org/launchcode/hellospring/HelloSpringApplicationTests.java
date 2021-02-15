@@ -1,10 +1,10 @@
-package org.launchcode.codingevents;
+package org.launchcode.hellospring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CodingEventsApplicationTests {
+class HelloSpringApplicationTests {
 
 	@Test
 	void contextLoads() {

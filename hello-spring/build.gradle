@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'org.launchcode'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '13'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'//included based on selection of spring web dependency in the spring web initializer
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'//added based on our selection of the dev tools dependency in the spring initializer
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' //add new lines if you need new dependency
+}
+
+test {
+	useJUnitPlatform()
+}

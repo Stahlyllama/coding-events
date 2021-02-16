@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.awt.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("events")
 public class EventController {
 
-    private static List events = new List();
+    private static List<String> events = new ArrayList<>();
 
     @GetMapping
     public String displayAllEvents(Model model){

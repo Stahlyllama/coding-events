@@ -19,12 +19,12 @@ public class EventController {
 
     private static List<String> events = new ArrayList<>();
 
-    @GetMapping
-    public String displayAllEvents(Model model) {
-        model.addAttribute("title", "All Events");
-        model.addAttribute("events", events);
-        return "events/index";
-    }
+//    @GetMapping
+//    public String displayAllEvents(Model model) {
+//        model.addAttribute("title", "All Events");
+//        model.addAttribute("events", events);
+//        return "events/index";
+//    }
 
     @GetMapping("create")
     public String displayCreateEventForm(Model model) {

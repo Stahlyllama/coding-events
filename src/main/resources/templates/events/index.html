@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
+<body class="container">
+
+<h1>All Events</h1>
+
+<header th:replace="fragments :: header"></header>
+
+<table class="center">
+        <tr>
+            <th>Event Name</th>
+            <th>Description</th>
+            <th>Address</th>
+            <th>Picture</th>
+        </tr>
+        <th:block th:each="event : ${events}">
+        <tr>
+            <td th:text="${event.key}"></td>
+            <td th:text="${event.value}"></td>
+           <th:block th:if='${event.key.equals("CES")}'>
+               <th:block th:replace="fragments :: cesAddress"></th:block>
+           </th:block>
+            <th:block th:if='${event.key.equals("Hour of Code")}'>
+                <th:block th:replace="fragments :: hourOfCodeAddress"></th:block>
+            </th:block>
+            <th:block th:if='${event.key.equals("Strange Loop")}'>
+                <th:block th:replace="fragments :: strangeLoopAddress"></th:block>
+            </th:block>
+        </tr>
+    </th:block>
+    </table>
+</body>
+</html>
+
 <!--<head>-->
 <!--    <meta charset="UTF-8"/>-->
 <!--    <title>Coding Events</title>-->
 <!--</head>-->
-<body class="container">
 
-<!--<h1>All Events</h1>-->
-
-<header th:replace="fragments :: header"></header>
-
-<p th:unless="${events} and ${events.size()}">No events!</p>
+<!--<p th:unless="${events} and ${events.size()}">No events!</p>-->
 <!--Is there a non null variable called events if so let me make sure there are things insdie that variable- if either are true then render No events!-->
 <!--<ul>-->
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Name</th>
-        </tr>
-        </thead>
-    <tr th:each="event : ${events}">
-        <td th:text="${event}"></td>
-    </tr>
-</table>
+<!--<ul>-->
+<!--    <th:block th:each="event : ${events}">-->
+<!--        <li th:text="${event}"></li>-->
+<!--    </th:block>-->
 <!--</ul>-->
-
-</body>
-</html>

@@ -3,24 +3,41 @@
 <head th:fragment="head">
     <meta charset="UTF-8"/>
     <title>Coding Events</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!--    <script th:src="@{/script.js}"></script> &lt;!&ndash;thymeleaf is able to use these script tags and link across all of these elements&ndash;&gt;-->
-<!--    <link th:href="@{/styles.css}" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+    <script th:src="@{/script.js}"></script>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
 </head>
 <body>
 
 <nav th:fragment="header">
-    <h1 th:text="${title}">Coding Events</h1>
-    <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="/events">All Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="/events/create">Create Event</a></li>
 
-<!--    <ul>-->
-<!--        <li><a href="/events">All Events</a></li>-->
-<!--        <li><a href="/events/create">Create Events</a></li>-->
-    </ul>
+<th:block th:fragment="hourOfCodeAddress">
+    <td>123Main St.</td>
+    <td><img th:src="@{/images/hourOfCode.jpeg}"></td>
+</th:block>
+
+<th:block th:fragment="strangeLoopAddress">
+    <td>4098 5th St.</td>
+    <td><img th:src="@{/images/strangeLoop.jpeg}"></td>
+</th:block>
+
+<th:block th:fragment="cesAddress">
+    <td>1 Major St.</td>
+    <td><img th:src="@{/images/ces.png}"></td>
+</th:block>
+
 </nav>
 
 </body>
 </html>
+
+<!--    <h1 th:text="${title}">Coding Events</h1>-->
+<!--    <ul class="nav">-->
+<!--        <li class="nav-item"><a class="nav-link" href="/events">All Events</a></li>-->
+<!--        <li class="nav-item"><a class="nav-link" href="/events/create">Create Event</a></li>-->
+
+<!--    <ul>-->
+<!--        <li><a href="/events">All Events</a></li>-->
+<!--        <li><a href="/events/create">Create Events</a></li>-->
+<!--    </ul>-->

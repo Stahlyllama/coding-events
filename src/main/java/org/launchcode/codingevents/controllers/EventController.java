@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -27,8 +28,14 @@ public class EventController {
 //       events.add("Strange Loop");
 //       events.add("Apple WWDC");
 //       events.add("SpringOne Platform");
-       model.addAttribute("title", "All Events");
-       model.addAttribute("events", events);
+//       model.addAttribute("title", "All Events");
+//       model.addAttribute("events", events);
+
+        HashMap<String, String> events= new HashMap<>();
+        events.put("Hour of Code", "Getting young minds interested in coding.");
+        events.put("Strange Loop", "coding conference of professionals sharing ideas.");
+        events.put("CES", "Annual trade show showing awesome new tech.");
+        model.addAttribute("events", events);
         return "events/index";
     }
     //lives at /events/create

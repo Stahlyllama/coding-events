@@ -6,24 +6,24 @@
 <!--</head>-->
 
 <head th:replace="fragments :: head"></head>
-<body>
+<body class="container">
 
 <h1>Create Event</h1>
 
 <header th:replace="fragments :: header"></header>
 
   <form method="post"> <!--how the method should be submittied-->
-        <input type="text" name="eventName">
-        <input type="submit" value="Create Event">
+<!--        <input type="text" name="eventName">-->
+<!--        <input type="submit" value="Create Event">-->
 
-      <!--      <div class="form-group">-->
-<!--            <label>Name-->
-<!--                 <input type="text" name="eventName" class= "form-control">-->
-<!--            </label>-->
-<!--      </div>-->
-<!--      <div>-->
-<!--                 <input type="submit" value="Create" class="btn btn-success">-->
-<!--      </div>-->
+      <div class="form-group">
+          <label>Name
+              <input type="text" name="eventName" class= "form-control">
+          </label>
+      </div>
+      <div>
+              <input type="submit" value="Create" class="btn btn-success">
+      </div>
    </form>
 
 

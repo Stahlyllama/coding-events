@@ -32,26 +32,26 @@ public class EventController {
         return "events/index";
     }
     //lives at /events/create
-    @GetMapping("create")
-    public String renderCreateEventForm(){
-        return "events/create";
-    }
-    @PostMapping
-    public String createEvent(@RequestParam String eventName) {
-        events.add(eventName);
-        return "redirect:"; //put name of path, which since this is the root path it takes the displayAllEvents method.
-
-    }
 //    @GetMapping("create")
-//    public String displayCreateEventForm(Model model) {
-//        model.addAttribute("title", "Create Event");
+//    public String renderCreateEventForm(){
 //        return "events/create";
 //    }
-//
-//    @PostMapping("create")
-//    public String processCreateEventForm(@RequestParam String eventName) {
+//    @PostMapping
+//    public String createEvent(@RequestParam String eventName) {
 //        events.add(eventName);
-//        return "redirect:";
+//        return "redirect:"; //put name of path, which since this is the root path it takes the displayAllEvents method.
+
 //    }
+    @GetMapping("create")
+    public String displayCreateEventForm(Model model) {
+        model.addAttribute("title", "Create Event");
+        return "events/create";
+    }
+
+    @PostMapping("create")
+    public String processCreateEventForm(@RequestParam String eventName) {
+        events.add(eventName);
+        return "redirect:";
+    }
 
 }

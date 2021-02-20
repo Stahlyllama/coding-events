@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head"></head>
-<body class="container">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Create Event</title>
+</head>
+<body>
+
+<h1>Create Event</h1>
 
 <header th:replace="fragments :: header"></header>
 
   <form method="post"> <!--how the method should be submittied-->
-      <div class="form-group">
-            <label>Name
-                 <input type="text" name="eventName" class= "form-control">
-            </label>
-      </div>
-      <div>
-                 <input type="submit" value="Create" class="btn btn-success">
-      </div>
+        <input type="text" name="eventName">
+        <input type="submit" value="Create Event">
+
+      <!--      <div class="form-group">-->
+<!--            <label>Name-->
+<!--                 <input type="text" name="eventName" class= "form-control">-->
+<!--            </label>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--                 <input type="submit" value="Create" class="btn btn-success">-->
+<!--      </div>-->
    </form>
 
 

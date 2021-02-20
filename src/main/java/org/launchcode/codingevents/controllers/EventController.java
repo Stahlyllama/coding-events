@@ -42,16 +42,16 @@ public class EventController {
         return "redirect:"; //put name of path, which since this is the root path it takes the displayAllEvents method.
 
     }
-    @GetMapping("create")
-    public String displayCreateEventForm(Model model) {
-        model.addAttribute("title", "Create Event");
-        return "events/create";
-    }
-
-    @PostMapping("create")
-    public String processCreateEventForm(@RequestParam String eventName) {
-        events.add(eventName);
-        return "redirect:";
-    }
+//    @GetMapping("create")
+//    public String displayCreateEventForm(Model model) {
+//        model.addAttribute("title", "Create Event");
+//        return "events/create";
+//    }
+//
+//    @PostMapping("create")
+//    public String processCreateEventForm(@RequestParam String eventName) {
+//        events.add(eventName);
+//        return "redirect:";
+//    }
 
 }

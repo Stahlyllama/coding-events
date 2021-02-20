@@ -7,6 +7,9 @@
 <body>
 
 <h1>All Events</h1>
+
+<header th:replace="fragments :: header"></header>
+
 <p th:unless="${events} and ${events.size()}">No events!</p>
 <!--Is there a non null variable called events if so let me make sure there are things insdie that variable- if either are true then render No events!-->
 <ul>

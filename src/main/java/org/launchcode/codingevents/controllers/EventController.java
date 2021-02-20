@@ -17,15 +17,31 @@ import java.util.List;
 @RequestMapping("events")
 public class EventController {
 
-    private static List<String> events = new ArrayList<>();
+    private static ArrayList<String> events = new ArrayList<>(); //as long as your declaration includes the data type of the elements that will be stored
+    //you don't need to put that type in the constructor call ArrayList<> that'll be implicitly inferred
 
-//    @GetMapping
-//    public String displayAllEvents(Model model) {
-//        model.addAttribute("title", "All Events");
-//        model.addAttribute("events", events);
-//        return "events/index";
-//    }
+    @GetMapping
+    public String displayAllEvents(Model model) {
+//       ArrayList<String> events = new ArrayList<>();
+ //       events.add("Code with Pride"); this is hardcoded four events
+//       events.add("Strange Loop");
+//       events.add("Apple WWDC");
+//       events.add("SpringOne Platform");
+       model.addAttribute("title", "All Events");
+       model.addAttribute("events", events);
+        return "events/index";
+    }
+    //lives at /events/create
+    @GetMapping("create")
+    public String renderCreateEventForm(){
+        return "events/create";
+    }
+    @PostMapping
+    public String createEvent(@RequestParam String eventName) {
+        events.add(eventName);
+        return "redirect:"; //put name of path, which since this is the root path it takes the displayAllEvents method.
 
+    }
     @GetMapping("create")
     public String displayCreateEventForm(Model model) {
         model.addAttribute("title", "Create Event");

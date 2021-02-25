@@ -8,8 +8,8 @@
 <form method="post">
     <div class="form-group">
         <label>Name
-            <input th:field="${event.name}" class="form-control">
-        </label>
+            <input th:field="${event.name}" class="form-control">  <!--setting th:errors tells thymeleaf to insert any error messsages related to the name field of event into the p tag.-->
+        </label>  <!-- We add class="error" to allow us to style this element.  make sure your styles.css is included in the head frag of your fragments html or stylesheet won't load.-->
         <p class="error" th:errors="${event.name}"></p>
     </div>
     <div class="form-group">

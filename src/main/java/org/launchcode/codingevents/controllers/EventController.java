@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Optional;
 
-/**
- * Created by Chris Bay
- */
 @Controller
 @RequestMapping("events")
 public class EventController {
